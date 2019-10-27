@@ -39,3 +39,9 @@ This should turn on the fan. You can turn it off again with:
 ```
     /home/pi/m107.sh
 ```
+
+### Additional information
+ - [DrLex's Tips for the Creator Pro](https://www.dr-lex.be/info-stuff/print3d-ffcp.html)
+ - [The Project that inspired this one](https://github.com/DrLex0/MightyVariableFan)
+ - [Thingiverse Thing for the above project](https://www.thingiverse.com/thing:2852499) This contains lots of information for hooking up the mosfets and whatnot.
+
