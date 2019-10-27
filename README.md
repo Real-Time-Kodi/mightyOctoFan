@@ -18,15 +18,16 @@ I reccomend leaving the wire for the cooling fan connected to the mightyboard an
 2. Reboot Octoprint.
 3. Log into your raspberry pi via ssh
 4. Download m106.sh and m107.sh into /home/pi/ (or wherever)
-    wget https://raw.githubusercontent.com/Real-Time-Kodi/mightyOctoFan/master/m106.sh
-    wget https://raw.githubusercontent.com/Real-Time-Kodi/mightyOctoFan/master/m107.sh
+        wget https://raw.githubusercontent.com/Real-Time-Kodi/mightyOctoFan/master/m106.sh
+        wget https://raw.githubusercontent.com/Real-Time-Kodi/mightyOctoFan/master/m107.sh
 5. Mark m106.sh and m107.sh executable
-    chmod +x m106.sh m107.sh
+        chmod +x m106.sh m107.sh
 6. In Octoprint, go to settings>plugins>Fan Speed Mirror and set the following values
 ![Set the scripts locations to /home/pi/m106.sh and /home/pi/m107.sh](https://raw.githubusercontent.com/Real-Time-Kodi/mightyOctoFan/master/img/fsmsettings.png)
+7. Set your gcode flavor in your slicer to RepRap/Sprinter
 
 ### Testing
 You can test to see if your fan is working with the following command:  
-    /home/pi/m106.sh 255  
+        /home/pi/m106.sh 255  
 This should turn on the fan. You can turn it off again with:  
-    /home/pi/m107.sh
+        /home/pi/m107.sh
